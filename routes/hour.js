@@ -1,6 +1,6 @@
 import express from "express";
 const router = express.Router();
-import hourController from "../controllers/hourController.js";
+import { hourController } from "../controllers/index.js";
 import auth from "../auth/auth.js";
 
 router.post("/", auth.empAuth, hourController.CreateHour);

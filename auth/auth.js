@@ -4,7 +4,7 @@ import db from "../helpers/userHelpers.js";
 export default {
   empAuth: async (req, res, next) => {
     const token = req.cookies.token;
-    //console.log("JWT token: " + req.cookies.token);
+    console.log("JWT token: " + req.cookies.token);
     if (!token) {
       return res.status(403).send("A token is required for authentication");
     }

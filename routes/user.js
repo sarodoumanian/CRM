@@ -1,7 +1,7 @@
 import express from "express";
 const router = express.Router();
 import multer from "multer";
-import userController from "../controllers/userController.js";
+import { userController } from "../controllers/index.js";
 import auth from "../auth/auth.js";
 
 const multerConfig = {

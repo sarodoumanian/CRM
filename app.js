@@ -31,13 +31,11 @@ pool.getConnection((err, con) => {
   if (err) return console.log(err);
   console.log("connected to db...");
 });
-import userRouter from "./routes/user.js";
+
+import { userRouter, hourRouter, pdfRouter } from "./routes/index.js";
+
 app.use("/api/user", userRouter);
-
-import hourRouter from "./routes/hour.js";
 app.use("/api/hour", hourRouter);
-
-import pdfRouter from "./routes/pdfmake.js";
 app.use("/api/pdf", pdfRouter);
 
 app.listen(process.env.PORT, () => {

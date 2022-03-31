@@ -1,4 +1,4 @@
-import db from "../helpers/hourHelpers.js";
+import { hourHelpers as db } from "../helpers/index.js";
 
 export default {
   CreateHour: async (req, res) => {

@@ -1,4 +1,4 @@
-import db from "../helpers/userHelpers.js";
+import { userHelpers as db } from "../helpers/index.js";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 
